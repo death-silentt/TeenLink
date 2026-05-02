@@ -1,10 +1,10 @@
-services:
+databases:
   # The PostgreSQL Database
-  - type: psql
-    name: teenlink-db
+  - name: teenlink-db
     plan: free
     postgresMajorVersion: 15
 
+services:
   # The FastAPI Web Service
   - type: web
     name: teenlink-api
